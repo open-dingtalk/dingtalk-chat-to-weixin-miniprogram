@@ -1,5 +1,5 @@
 {
-  "name": "miniprogram-ts-less-quickstart",
+  "name": "dingtalk-chat-to-weixin-miniprogram",
   "version": "1.0.0",
   "scripts": {},
   "keywords": [],
@@ -8,7 +8,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "miniprogram-api-typings": "^2.8.3-1"
+    "miniprogram-api-typings": "^3.10.0"
   },
   "main": ".eslintrc.js",
   "description": ""
