@@ -1,0 +1,31 @@
+<!--pages/dingding/chat.wxml-->
+
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">可以与钉钉机器人对话：</view>
+    <view class="page-section-spacing">
+      <scroll-view scroll-y="true" style="height: 900rpx" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+        <view wx:for="{{chatMessageList}}" class="scroll-view-item demo-text-{{item.type}}">
+          <view wx:if="{{item.type ===0}}">
+            <text class="text-container-{{item.type}}">{{item.text}} </text>
+            <text class="user-container-{{item.type}}">{{item.user}}</text>
+          </view>
+          <view wx:else>
+            <text class="user-container-{{item.type}}">{{item.user}}</text>
+            <text class="text-container-{{item.type}}">{{item.text}} </text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="weui-cells weui-cells_after-title weui-input">
+      <view class="weui-cell weui-cell_input" style="height: 200rpx">
+        <input auto-focus bindconfirm="bindKeyInput" placeholder="随便说点什么" />
+      </view>
+      <checkbox-group bindchange="isAutoChange">
+      <label class="checkbox" style="float: right; position: fixed;bottom: 0px; right: 0px;">
+        <checkbox value="1" checked="false"/>自动答复
+      </label>
+    </checkbox-group>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+/* pages/dingding/chat.wxss */
+
+.demo-text-1{
+  text-align: left;
+  padding: 8px 2px;
+}
+.demo-text-0{
+  text-align: right;
+  padding: 8px 2px;
+}
+.weui-input{
+  border:1px solid #666;
+  height: 100px;
+}
+.user-container-0{
+  border-radius:50%;
+  font-size: 24rpx;
+  padding: 4px;
+  background-color: chocolate;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.text-container-0{
+  background-color:cornsilk;
+  border-radius: 4px;
+  padding: 2px;
+}
+.user-container-1{
+  border-radius:50%;
+  font-size: 24rpx;
+  padding: 4px;
+  background: #456BD9;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.text-container-1{
+  background-color: rgb(185, 215, 216);
+  border-radius: 4px;
+  padding: 2px;
+}
